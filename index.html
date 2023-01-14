@@ -2,11 +2,28 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Anaconda!!</title>
 </head>
 <body>
-    <h2>The Anaconda</h2>
+    <h4>The Anaconda</h4>
     <canvas id="board"></canvas>
+    <div class="keys">
+        <h2 class="text">Anycase if not using pc</h2>
+        <div class="up" onClick= up()>
+            <i class='bx bx-up-arrow-alt'></i>
+        </div>
+        <div class="down" onClick= down(event)>
+            <i class='bx bx-down-arrow-alt'></i>
+        </div>
+        <div class="right" onClick= right(event)>
+            <i class='bx bx-right-arrow-alt'></i>
+        </div>
+        <div class="left" onClick= left(event)>
+            <i class='bx bx-left-arrow-alt'></i>
+        </div>
+    </div>
     <script src="script.js"></script>
+
 </body>
 </html>
