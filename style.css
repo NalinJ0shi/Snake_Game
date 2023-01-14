@@ -1,4 +1,3 @@
-
 body{
   font-family:'Courier New', Courier, monospace;
   text-align: center;
@@ -6,4 +5,18 @@ body{
   background-image: url("snake.png");
   background-size: cover;
   background-position: center;
+}
+.keys{
+  font-size: 3.25rem;
+  color: aqua;
+}
+.text{
+  font-size: 2.25rem;
+}
+
+.right:hover,
+.left:hover,
+.down:hover,
+.up:hover{
+  color: black;
 }
