@@ -32,7 +32,8 @@ window.onload = function(){
   context = board.getContext("2d")//used for drawing on the board
 
   placeapple();
-  document.addEventListener('keyup',changedirection);
+  document.addEventListener('keydown',changedirection);
+  document.addEventListener('up',changedirection);
   setInterval(update, 1000/10);
 }
 
@@ -77,6 +78,7 @@ function update(){
     gameover=true;
     gameoversound.play();
     alert("Game over");
+    alert("press F5 to try again");
   }
   /*condition 2*/for(let i =0; i< snakebody.length;i++){
     if(snakeX == snakebody*[i][0] &&snakeY ==snakebody[i][1]){
@@ -106,6 +108,35 @@ function changedirection(event){
     speedy=0;
   }
 }
+function up(){
+  movesound.play();
+  if(speedy!=1){
+    speedx=0;
+    speedy=-1;
+  }
+}
+function down(){
+  movesound.play();
+  if(speedy!=-1){
+    speedx=0;
+    speedy=1;
+  }
+}
+function right(event){
+  movesound.play();
+  if(speedx!=-1){
+    speedx=1;
+    speedy=0;
+  }
+}
+function left(event){
+  if(speedx!=1){
+    speedx=-1;
+    speedy=0;
+  }
+  movesound.play();
+}
+
 //random apple generator
 function placeapple(){
   applex =Math.floor(Math.random()* cols) * blocksize;
