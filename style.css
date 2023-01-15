@@ -14,16 +14,7 @@ body{
 .text{
   font-size: 2.25rem;
 }
-.left{
-  position: absolute;
-  left: 40rem;
-  top: 46rem
-}
-.right{
-  right: 40rem;
-  position: fixed;
-  top: 46rem;
-}
+
 .right:hover,
 .left:hover,
 .down:hover,
