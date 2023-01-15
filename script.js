@@ -24,6 +24,8 @@ var speedx= 0;
 var speedy= 0;
 //game over
 var gameover = false;
+//score
+let score = 0;
 //when the page loads
 window.onload = function(){
   board = document.getElementById('board');
@@ -62,6 +64,8 @@ function update(){
   //snake consumes the apple
   if (snakeX ==applex && snakeY ==appley){
     foodsound.play();
+    score+=10;
+    scoretox.innerHTML ="score: " + score;
     snakebody.push([applex,appley])
     placeapple();
   }
@@ -78,15 +82,15 @@ function update(){
     gameover=true;
     gameoversound.play();
     alert("Game over");
-    alert("press F5 to try again");
   }
   /*condition 2*/for(let i =0; i< snakebody.length;i++){
-    if(snakeX == snakebody*[i][0] &&snakeY ==snakebody[i][1]){
+    if(snakeX == snakebody*[i][x] &&snakeY ==snakebody*[i][1]){
       gameover=true;
       gameoversound.play();
       alert("Game over");
     }
   }
+  
 }
 
 function changedirection(event){
