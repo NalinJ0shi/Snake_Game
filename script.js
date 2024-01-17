@@ -82,6 +82,7 @@ function update(){
     gameover=true;
     gameoversound.play();
     alert("Game over");
+    alert("Reload the site to play again");
   }
   /*condition 2*/for(let i =0; i< snakebody.length;i++){
     if(snakeX == snakebody*[i][x] &&snakeY ==snakebody*[i][1]){
