@@ -88,6 +88,7 @@ function update(){
       gameover=true;
       gameoversound.play();
       alert("Game over");
+      alert("Reload the site to play again");
     }
   }
   
