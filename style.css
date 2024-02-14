@@ -1,27 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 body{
-    font-family:'Courier New', Courier, monospace;
+    margin-top: 3rem;
+    font-family:"Poppins", sans-serif;
     text-align: center;
     background-repeat: no-repeat;
-    background-image: url("snake.png");
+    background-color: bisque;
     background-size: cover;
   }
   .keys{
-    font-size: 3.25rem;
-    color: aqua;
+    font-size: 6.5rem;
+    color: rgb(57, 131, 131);
   }
   .left{
     margin-right: 300px;
-    margin-top: -60px;
+    margin-top: -153px;
   }
   .right{
     margin-left: 300px;
-    margin-top: -95px;
+    margin-top: -231px;
   }
 
   .text{
     font-size: 2rem;
-    color: black;
   }
   
   .right:hover,
