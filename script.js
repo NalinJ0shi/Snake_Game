@@ -14,6 +14,12 @@ const musicsound = new Audio('music.mp3');
 //snake head
 var snakeX = blocksize * 5;
 var snakeY = blocksize * 5;
+// Snake head color
+context.fillStyle = '#006400'; // Dark green color
+
+// Draw the snake head
+context.fillRect(snakeX, snakeY, blocksize, blocksize);
+
 //snake body
 var snakebody = []
 //apple
